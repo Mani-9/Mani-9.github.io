@@ -1,0 +1,49 @@
+body{
+    background-image: linear-gradient(to top, #accbee 0%, #e7f0fd 100%);
+    
+}
+.navmod{
+    font-size: x-large;
+}
+.nav-color-link{
+    color: black;
+}
+            
+.btn-grad {
+    background-image: linear-gradient(to right, #77A1D3 0%, #79CBCA  51%, #77A1D3  100%);
+    margin: 10px;
+    padding: 15px 45px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;            
+    box-shadow: 0 0 20px #eee;
+    border-radius: 10px;
+    display: block;
+  }
+
+  .btn-grad:hover {
+    background-position: right center; /* change the direction of the change here */
+    color: #fff;
+    text-decoration: none;
+  }
+ 
+ .bg-container{
+    background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);
+
+ }
+ h1{
+    font-size: 50px;
+    color: white;
+    text-align: center;
+    margin-top: 20px;
+ }
+ ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-image: linear-gradient(to top, #c4c5c7 0%, #dcdddf 52%, #ebebeb 100%);
+    text-align: center;
+ }

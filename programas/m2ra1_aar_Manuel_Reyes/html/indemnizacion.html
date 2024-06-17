@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Indemnizacion</title>
+    <link rel="stylesheet" href="../css/index.css">
+    <script src="script/indemnizacion.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+
+<body >
+    <header class="container-fluid  p-4">
+        <section class="row">
+            <section id="logotipo" class="col-12 col-md-6 h-100">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/0/09/Logotipo_de_el_INTECAP.png"
+                    class="img-fluid float-start col-3 " alt=" ...">
+            </section>
+            <section id="menuRedesSociales" class="col-12 col-md-6 d-flex justify-content-end p-3 h-100">
+                <div class="btn-group col-3 d-flex justify-content-end" role="group" aria-label="Social media links">
+                    <a class="btn btn-image-bg" href="https://www.facebook.com/intecapoficial/?locale=es_LA"  aria-label="Facebook">
+                        <img src="../img/DeviconFacebook.svg" alt="Facebook logo" width="25" height="25">
+                    </a>
+                    <a class="btn btn-image-bg" href="https://twitter.com/intecapoficial?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"  aria-label="Twitter">
+                        <img src="../img/PrimeTwitter.svg" alt="Twitter logo" width="25" height="25">
+                    </a>
+                    <a class="btn btn-image-bg" href="https://www.instagram.com/intecapoficial/?hl=es"  aria-label="Instagram">
+                        <img src="../img/SkillIconsInstagram.svg" alt="Instagram logo" width="25" height="25">
+                    </a>
+                    <a class="btn btn-image-bg" href="https://www.youtube.com/intecapoficial"  aria-label="YouTube">
+                        <img src="../img/LogosYoutubeIcon.svg" alt="YouTube logo" width="25" height="25">
+                    </a>
+                    <a class="btn btn-image-bg" href="https://gt.linkedin.com/school/intecapoficial/"  aria-label="LinkedIn">
+                        <img src="../img/LogosLinkedinIcon.svg" alt="LinkedIn logo" width="25" height="25">
+                    </a>
+                </div>
+                
+            </section>
+        </section>        
+    </header>
+    <nav class="container-fluid ">
+        <div class="row d-flex justify-content-center">
+            <ul class="nav justify-content-center navmod col-12">
+                <li class="nav-item mt-2 mb-2">
+                    <a class="nav-link text-dark" aria-current="page" href="../index.html">Inicio</a>
+                </li>
+                <li class="nav-item mt-2 mb-2">
+                    <a class="nav-link text-dark" href="../html/sueldoliquido.html">Sueldo Líquido</a>
+                </li>
+                <li class="nav-item mt-2 mb-2">
+                    <a class="nav-link text-dark" href="../html/indemnizacion.html">Indemnización</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <main class="container-fluid p-4 ">
+        <section class="row">
+            <section class="col-md-9">
+                <article class="row ">
+                    <section class="col-12 ">
+                        <section class="row" >
+                                <article class="p-3 h-100 col-12 ">                                    
+                                    <section class="p-3 h-100 border border-dark bg-container">
+                                        <h1>Indemnización.</h1>
+                                        <label for="inputsalario">Sueldo Base:</label>
+                                        <div class=" input-group mb-3 ">
+                                            <span class=" input-group-text">Q.</span>
+                                            <input type="number" id="inputsueldobase" class="form-control col-10"
+                                                aria-label="Total Quetzales">
+                                        </div>
+                                        <label for="inputbonificacion">Cantidad de años trabajados:</label>
+                                        <div class="input-group mb-3 ">
+                                            <input type="number" id="inputcantidadaños" class="form-control col-10"
+                                                aria-label="Total Quetzales">
+                                        </div>
+                                        <label for="inputComisiones">Bono 14 proporcional:</label>
+                                        <div class="input-group mb-3 ">
+                                            <span class="input-group-text">Q.</span>
+                                            <input type="number" id="inputbono14" class="form-control col-10"
+                                                aria-label="Total Quetzales" readonly>
+                                        </div>
+                                        <label for="inputComisiones">Aguinaldo proporcional:</label>
+                                        <div class="input-group mb-3 ">
+                                            <span class="input-group-text">Q.</span>
+                                            <input type="number" id="inputaguinaldo" class="form-control col-10"
+                                                aria-label="Total Quetzales" readonly>
+                                        </div>
+                                        <label for="inputComisiones">Salario pendiente:</label>
+                                        <div class="input-group mb-3 ">
+                                            <span class="input-group-text">Q.</span>
+                                            <input type="number" id="inputsalariop" class="form-control col-10"
+                                                aria-label="Total Quetzales">
+                                        </div>
+                                        <label for="inputComisiones">Deudas o cobros pendientes:</label>
+                                        <div class="input-group mb-3 ">
+                                            <span class="input-group-text">Q.</span>
+                                            <input type="number" id="inputcomisiones" class="form-control col-10"
+                                                aria-label="Total Quetzales">
+                                        </div>
+                                        <section class="col-12 d-flex flex-column justify-content-center align-items-center p-4 ">
+                                            <button class="btn btn-primary col-8 btn-grad" type="button" id="calcular"
+                                                onclick="totalIndemnizacion()">Obtener Indemnización.</button>
+                                                <h3>Total indemnización:</h3> 
+                                                <textarea class="form-control customtxt" id="total" rows="3" readonly
+                                            placeholder="total Indemnizacion"></textarea>        
+                                        <br>
+                                    </section>
+                                    </section>
+                                  
+                                </article>   
+                        </section>
+                    </section>
+                </article>
+            </section>
+            <section class="col-md-3">
+                <article class="col-12 p-3 h-100">
+                    <article class="p-3 h-100 d-flex justify-content-center row">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSKihiREENTwcYRILZ0HA9J64odhk24I4kgXs3RtMw-IA&s"
+                            class="img-fluid float-start  " alt="...">
+                    </article>
+                </article>
+            </section>
+        </section>
+        
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
