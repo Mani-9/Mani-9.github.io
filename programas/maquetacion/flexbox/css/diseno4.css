@@ -1,0 +1,71 @@
+.container {
+    width: 1200px;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+}
+
+header {
+    height: 250px;
+    background-color: yellow
+}
+
+nav {
+    height: 100px;
+    display: flex;
+}
+
+.verde,
+.celeste,
+.gris {
+    width: 33.33%;
+}
+
+.celeste {
+    background-color: aqua;
+}
+
+.gris {
+    background-color: gray;
+}
+
+.verde {
+    background-color: green;
+}
+
+main {
+    height: 500px;
+
+    display: flex;
+}
+
+#main_cafe {
+    background-color: brown;
+    width: 50%;
+}
+
+#main_naranja {
+    background-color: orange;
+    width: 50%;
+}
+
+#seccion_final {
+    background-color: gray;
+    height:  250px;
+    display: flex;
+}
+
+#art1, #art2, #art3, #art4, #art5, #art6{
+    width: 16.66%;
+}
+#art1, #art3, #art5{
+    background-color: darkkhaki;
+}
+#art2, #art4, #art6{
+    background-color: cadetblue;
+}
+footer {
+    background-color: black;
+    height: 100px;
+
+}

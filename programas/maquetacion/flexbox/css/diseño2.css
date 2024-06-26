@@ -1,0 +1,36 @@
+.container {
+    width: 1000px;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+}
+header {
+    height: 350px;
+    background-color: yellow;
+}
+#seccion_incial{
+    height:  125px;
+    display: flex;
+}
+#art1, #art2, #art3, #art4{  width: 250px;
+}
+#art1, #art3{
+    background-color: orangered;
+}
+#art2, #art4{
+    background-color: gray;
+}
+#seccion_final{
+    height:  500px;
+    display: flex;
+}
+#f1, #f3{  width: 250px;
+    background-color: rgba(43, 255, 0, 0.637);
+}
+#f2{
+    width: 500px;
+}
+footer{
+    height: 50px;
+    background-color: black;
+}

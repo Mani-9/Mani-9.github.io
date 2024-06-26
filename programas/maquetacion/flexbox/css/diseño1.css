@@ -1,0 +1,28 @@
+.container {
+    width: 1440px;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+}
+
+header {
+    height: 350px;
+    background-color: rgb(93, 149, 212);
+}
+#seccion_final {
+    height:  900px;
+    display: flex;
+}
+#art1{  width: 390px;
+background-color: skyblue;}
+#art2{
+    width: 660px;
+    background-color: white;
+}
+#art3{width: 390px;
+    background-color: pink;}
+footer{
+    background-color: darkblue;
+    height: 50px;
+    color: white;
+}

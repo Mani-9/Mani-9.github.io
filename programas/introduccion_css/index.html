@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="estiloscss/styles1.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul id="menu">
+                <li class="lmenu"><a class="active" href="index.html">PAGINA INICIO</a></li>
+                <li class="lmenu"><a href="estructuracss.html">PÁGINA ESTRUCTURA DE CSS</a></li>
+                <li class="lmenu"><a href="colores.html">PÁGINA COLORES</a></li>
+                <li class="lmenu"><a href="bordes.html">PÁGINA BORDES</a></li>
+                <li class="lmenu"><a href="sombreado.html">PÁGINA SOMBREADA</a></li>
+                <li class="lmenu"><a href="fondosyopacidad.html">PÁGINA FONDOS Y OPACIDAD</a></li>
+            </ul>
+        </nav><br>
+        <h1 Class="titulo">Introducción a CSS</h1><br>
+    </header>
+    <aside id="left">
+        <img src="https://yt3.ggpht.com/a-/AAuE7mCrZXhlKfXR3QvgDMBfXE7WFHUURfG1ctgv1w=s900-mo-c-c0xffffffff-rj-k-no"
+            alt="Logo">
+    </aside>
+    <section id="sec1">
+        <h2 class="titulo2">¿Qué es CSS y para qué sirve?</h2><br>
+        <article id="art1">
+
+            <h3 class="titulo3">¿Qué es CSS?</h3>
+            <p class="textogen">Es un lenguaje de marcas enfocado a definir, crear y mejorar la presentación de un
+                documento
+                basado
+                en HTML.</p><br>
+            <h3 class="titulo3">¿Para que sirve CSS</h3>
+            <p class="textogen">El código CSS hace la vida más fácil al desarrollador front-end al separar las
+                estructura de
+                un
+                documento HTML de su presentación. Dicho de otro modo el HTML actuaría como es esqueleto de la web,
+                definiendo su estructura básica, y el CSS añadiría toda la capa de personalización sobre el que la
+                web define su aspecto final.</p><br>
+        </article>
+        <h2 class="titulo2">Formas de aplicar CSS</h2>
+        <article id="art2">
+            <ol class="olgen">
+                <li class="orden">
+                    <h3 class="titulo3">En línea:</h3>
+                    <p class="textogen">Consiste en indicar los estilos de un elemento HTML dentro de su etiqueta de
+                        apertura,
+                        mediante un atributo HTML.</p>
+                    <pre class="ejemplo">
+&lt;html&gt;
+    &lt;head&gt;  
+        &lt;title&gt;CSS integrado en las etiquetas&lt;/title&gt;  
+    &lt;/head&gt; 
+    &lt;body&gt; 
+           &lt;p style="color:green;">Párrafo de color verde.&lt;/p&gt; 
+    &lt;/body&gt; 
+&lt;/html&gt; 
+                    </pre><br>
+                </li>
+                <li class="orden">
+                    <h3 class="titulo3">Interna:</h3>
+                    <p class="textogen">Consiste en crear un documento CSS muy aparte y guardarlo con la extensión.</p>
+                    <pre class="ejemplo">
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: #333;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    
+    li {
+        float: left;
+    }
+                    </pre><br>
+                </li>
+                <li class="orden">
+                    <h3 class="titulo3">Externa:</h3>
+                    <p class="textogen">Consiste en crear en el documento HTML los estilos que deseamos aplicar</p>
+                    <pre class="ejemplo">
+&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+    &lt;title&gt;Document&lt;/title&gt;
+    &lt;style&gt;
+        #footer {
+            background-color:rgb(14, 14, 75);
+            position: absolute;
+            display: inline-block;
+            bottom: auto;
+            width: 100%;
+            height: 40px;
+            color: white;
+        }
+   &lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+                            
+&lt;/body&gt;
+&lt;/html&gt;
+
+                    </pre>
+                </li>
+            </ol><br>
+        </article>
+        <article id="art3">
+            <h2 class="titulo2">Qué es un comentario y como se escribe en CSS.</h2><br>
+            <ol class="olgen">
+                <li class="orden">
+                    <h3 class="titulo3">Qué es un comentario?</h3>
+                    <p class="textogen">Los comentarios son usados para añadir notas explicatorias o prevenir que el
+                        navegador interprete partes de la hoja de estilos.
+
+                        Los comentarios se pueden colocar en cualquier espacio en blanco que se permita en la hoja
+                        de estilos.
+                </li><br>
+                <li class="orden">
+                    <h3 class="titulo3">Como se escribe en CSS.</h3>
+ <pre class="ejemplo">
+    SINTAXIS:
+    /* Comentario */
+
+    EJEMPLO:
+    /* Comentario de una sola línea */
+
+    /*
+    Un comentario
+    que se extiende
+    en varias
+    líneas
+    */
+ 
+                    </pre>
+                </li>
+            </ol>
+        </article>
+    </section>
+
+</body>
+
+</html>

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="estiloscss/styles6.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul id="menu">
+                <li class="lmenu"><a class="active" href="index.html">PAGINA INICIO</a></li>
+                <li class="lmenu"><a href="estructuracss.html">PÁGINA ESTRUCTURA DE CSS</a></li>
+                <li class="lmenu"><a href="colores.html">PÁGINA COLORES</a></li>
+                <li class="lmenu"><a href="bordes.html">PÁGINA BORDES</a></li>
+                <li class="lmenu"><a href="sombreado.html">PÁGINA SOMBREADA</a></li>
+                <li class="lmenu"><a href="fondosyopacidad.html">PÁGINA FONDOS Y OPACIDAD</a></li>
+            </ul>
+        </nav><br>
+        <h1 Class="titulo">Fondos y opacidad</h1><br>
+    </header>
+    <aside id="left">
+        <img src="https://yt3.ggpht.com/a-/AAuE7mCrZXhlKfXR3QvgDMBfXE7WFHUURfG1ctgv1w=s900-mo-c-c0xffffffff-rj-k-no"
+            alt="Logo">
+    </aside>
+    <section id="sec1">
+        <article id="art1">
+            <ol class="olgen">
+                <li class="orden">
+                    <h3 class="titulo3">Background-color,:</h3>
+                    <p class="textogen">Este Background especifica el color de fondo de un elemento.</p><br>
+                    <pre class="ejemplo">
+body {
+  background-color: lightblue;
+}order: red 25px solid;
+                    </pre><br>
+                </li>
+                <li class="orden">
+                    <h3 class="titulo3">background-image:</h3>
+                    <p class="textogen">Este Background especifica una imagen para usar como fondo de un elemento.
+                    </p><br>
+                    <pre class="ejemplo">
+body {
+  background-image: url("paper.gif");
+}
+                    </pre><br>
+                </li>
+                <li class="orden">
+                    <h3 class="titulo3">Background-repeat:</h3>
+                    <p class="textogen">Este Background repite una imagen tanto horizontal como verticalmente.</p>
+                    <pre class="ejemplo">
+body {
+  background-image: url("gradient_bg.png");
+  background-repeat: repeat-x;
+}
+                    </pre><br>
+                    <br>
+                </li>
+                <li class="orden">
+                    <h3 class="titulo3">Background-attachment:</h3>
+                    <p class="textogen">Este Background especifica si la imagen de fondo debe desplazarse o ser fija (no
+                        se
+                        desplazará con el resto de la página):.</p><br>
+                    <pre class="ejemplo">
+body {
+  background-image: url("img_tree.png");
+  background-repeat: no-repeat;
+  background-position: right top;
+  background-attachment: scroll;
+}
+                    </pre><br>
+                </li>
+                <li>
+                <h3 class="titulo3">Background-position:</h3>
+                <p class="textogen">Este Background define la posición inicial de la imagen de fondo especificada.</p>
+                <br>
+                <pre class="ejemplo">
+body {
+  background: #ffffff url("img_tree.png") no-repeat right top;
+}
+                    </pre><br>
+                </li>
+                <li>
+                <h3 class="titulo3">Propiedad opacity.</h3>
+                <p class="textogen">Esta propiedad define la transparencia de un elemento, esto es, en qué grado se superpone el fondo
+                    al elemento.</p><br>
+                <pre class="ejemplo">
+div {
+  width: 200px;
+  height: 200px;
+  background: #FF7A59;
+  opacity: .5;
+}
+                </pre><br>
+                </li>
+            </ol>
+        </article>
+    </section>
+</body>
+
+</html>

@@ -1,0 +1,110 @@
+.container {
+    width: 900px;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+}
+
+#titulo {
+    height: 200px;
+    display: flex;
+}
+
+#t1,
+#t2,
+#t3,
+#t4,
+#t5,
+#t6,
+#t7,
+#t8,
+#t9 {
+    width: 100px;
+}
+
+#t1,
+#t4,
+#t7 {
+    background-color: blue;
+}
+
+#t2,
+#t5,
+#t8 {
+    background-color: red;
+}
+
+#t3,
+#t6,
+#t9 {
+    background-color: gray;
+}
+#seccion_incial {
+    height: 250px;
+    display: flex;
+}
+#si1{width: 600px;
+background-color: black;
+}
+#si2{ width: 300px;
+    background-color: yellow;
+}
+#media1{
+    height: 400px;
+    display: flex;
+}
+#m1{width: 400px;
+background-color: red;
+}
+#m2{ width: 500px;
+    background-color: skyblue;
+}
+#medio2{
+    height: 200px;
+    background-color: green;
+}
+#medio3{
+    height: 150px;
+    display: flex;
+}
+#mm1, #mm3{width: 300px;
+background-color: yellow;
+}
+#mm2{ width: 300px;
+    background-color: black;
+}
+
+#final {
+    height: 200px;
+    display: flex;
+}
+
+#f1,
+#f2,
+#f3,
+#f4,
+#f5,
+#f6,
+#f7,
+#f8,
+#f9 {
+    width: 100px;
+}
+
+#f1,
+#f4,
+#f7 {
+    background-color: blue;
+}
+
+#f2,
+#f5,
+#f8 {
+    background-color: red;
+}
+
+#f3,
+#f6,
+#f9 {
+    background-color: gray;
+}

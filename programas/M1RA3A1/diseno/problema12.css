@@ -1,0 +1,49 @@
+body {
+    background-image: url(https://images.nightcafe.studio/jobs/5kb1sZFvcoj2IClriKdW/5kb1sZFvcoj2IClriKdW--2--17mnb_2x.jpg?tr=w-1600,c-at_max);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+}
+
+header {
+    background: #67B26F;
+    background: -webkit-linear-gradient(to right, #4ca2cd, #67B26F);
+    background: linear-gradient(to right, #4ca2cd, #67B26F);
+    border-radius: 20px;
+    color: white;
+}
+
+article {
+    background: #67B26F;
+    background: -webkit-linear-gradient(to right, #4ca2cd, #67B26F);
+    background: linear-gradient(to right, #4ca2cd, #67B26F);
+    border-radius: 25px;
+    color: white;
+}
+
+p {
+    text-align: center;
+}
+
+.pagination {
+    background-image: linear-gradient(to right, #EDE574 0%, #E1F5C4 51%, #EDE574 100%);
+    margin: 10px;
+    padding: 15px 45px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    border-radius: 10px;
+    display: block;
+    border-radius: 45px;
+    color: black;
+}
+
+div {
+    margin-top: 25px;
+    text-align: center;
+}
+
+.btn-s {
+    background-image: linear-gradient(174.2deg, rgba(255, 244, 228, 1) 7.1%, rgba(240, 246, 238, 1) 67.4%);
+}

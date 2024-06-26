@@ -1,0 +1,76 @@
+.container {
+    width: 1000px;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+}
+
+header {
+    height: 400px;
+    background-color: rgb(177, 68, 29);
+}
+
+#titulo {
+    height: 50px;
+    background-color: rgba(111, 209, 102, 0.918);
+    display: flex;
+}
+
+#seccion_incial {
+    height: 250px;
+    display: flex;
+}
+
+#art1,
+#art2,
+#art3 {
+    width: 480px;
+}
+
+#art1 {
+    background-color: forestgreen;
+}
+
+#art2 {
+    background-color: sandybrown;
+}
+
+#art3 {
+    background-color: skyblue;
+}
+
+#medio {
+    height: 800px;
+    background-color: white;
+}
+
+#seccion_final {
+    height: 240px;
+    display: flex;
+}
+
+#f1,
+#f2,
+#f3,
+#f4,
+#f5,
+#f6 {
+    width: 240px;
+}
+
+#f1,
+#f3,
+#f5 {
+    background-color: darkblue;
+}
+
+#f2,
+#f4,
+#f6 {
+    background-color: orangered;
+}
+
+footer {
+    height: 50px;
+    background-color: skyblue;
+}

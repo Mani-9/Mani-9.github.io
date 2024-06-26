@@ -1,0 +1,125 @@
+.contenedor {
+    width: 1440px;
+    margin: auto;
+}
+
+header {
+    height: 400px;
+    background-color: orange;
+}
+
+nav {
+    height: 50px;
+    background-color: aquamarine;
+}
+
+#empresa {
+    height: 250px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+#mision {
+    background-color: greenyellow;
+}
+
+#vision {
+    background-color: yellow;
+}
+
+#valores {
+    background-color: blanchedalmond;
+}
+
+#tl {
+    height: 800px;
+}
+
+#imagenes {
+    height: 250px;
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto;
+}
+
+#img1,
+#img2,
+#img3,
+#img4,
+#img5,
+#img6 {
+    height: 250px;
+    border: 1px solid black;
+}
+
+#img1,
+#img3,
+#img5 {
+    background-color: blue;
+}
+
+#img2,
+#img4,
+#img6 {
+    background-color: orange;
+}
+
+
+#footer {
+    height: 50px;
+    background-color: skyblue;
+}
+
+@media screen and (max-width: 1024px) {
+    header {
+        background-color: red;
+    }
+
+    nav {
+        background-color: lightgreen;
+    }
+
+    #empresa {
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+
+    #mision {
+        background-color: green;
+    }
+
+    #vision {
+        background-color: palevioletred;
+    }
+
+    #valores {
+        background-color: blanchedalmond;
+        grid-column: 1 / span 2;
+        grid-row: 2;
+    }
+
+    #tl {
+        background-color: white;
+    }
+
+    #imagenes {
+        height: 500px;
+        display: grid;
+        grid-template-columns: auto auto auto;
+    }
+
+    #img1,
+    #img3,
+    #img5 {
+        background-color: green;
+    }
+
+    #img2,
+    #img4,
+    #img6 {
+        background-color: white;
+    }
+
+    #footer {
+        background-color: orange;
+    }
+}

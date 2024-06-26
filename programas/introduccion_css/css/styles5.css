@@ -1,0 +1,113 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-image: radial-gradient(circle at 26.92% 22.5%, #d4c877 0, #c7c875 6.25%, #b9c874 12.5%, #aac773 18.75%, #99c673 25%, #86c474 31.25%, #6fc176 37.5%, #54bd78 43.75%, #2bb97c 50%, #00b481 56.25%, #00b088 62.5%, #00ac91 68.75%, #00a89a 75%, #00a4a5 81.25%, #00a1b0 87.5%, #009ebb 93.75%, #009bc6 100%);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+#menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    text-align: center;
+}
+
+.lmenu {
+    float: left;
+}
+
+.lmenu a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.lmenu a:hover {
+    background-color: #229766;
+}
+
+#sec1 {
+    background: linear-gradient(to bottom, #deefff 0%, #98bede 100%);
+    margin: 0px auto;
+    height: auto;
+    width: 50%;
+    position: relative;
+    padding-left: 2.5px;
+    padding-right: 2.5%;
+    padding-top: 5px;
+    padding-bottom: 2.5%;
+}
+.titulo{
+    text-align: center;
+    font-weight: normal;
+    background: linear-gradient(to bottom, #deefff 0%, #deefff 0%);
+    margin: 0px auto;
+    height: auto;
+    width: 50%;
+    position: relative;
+    padding-left: 2.5px;
+    padding-right: 2.5%;
+    padding-top: 5px;
+    padding-bottom: 0.5%;
+}
+.titulo2{
+    text-align: center;
+    font-weight: normal;
+    
+}
+.titulo3{
+    text-align: left;
+    font-weight: normal;
+}
+.olgen{
+    overflow: hidden;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    list-style:circle;
+}
+.textogen{
+    text-align: justify;
+}
+.ejemplo{
+    background-color: palegoldenrod;
+    border-width: 1px;
+    border-style: solid;
+    border-color: black;
+    width: 550px;
+    padding: 10px;
+    margin: 0px auto;
+}
+img{
+    width: 100px;
+    height: 100px;
+}
+#left{
+    width: 17%;
+    padding-left: 15px;
+    padding-top: 20px;
+    margin-left: 15px;
+    float: left;
+}
+#art1 {
+    padding-left: 4%;
+}
+#art2 {
+    padding-left: 4%;
+}
+#art3 {
+    padding-left: 4%;
+}
+#art4 {
+    padding-left: 4%;
+}

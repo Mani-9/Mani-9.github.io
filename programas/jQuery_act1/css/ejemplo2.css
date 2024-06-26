@@ -1,0 +1,58 @@
+h2 {
+    text-align: center;
+    background-image: linear-gradient(to right, #4CB8C4 0%, #3CD3AD 51%, #4CB8C4 100%);
+    padding-top: 15px;
+    padding-bottom: 10px;
+}
+
+main {
+    text-align: center;
+}
+
+#parrafos {
+    margin-right: 45%;
+    margin-left: 42%;
+    background-image: linear-gradient(to top, #a8edea 0%, #fed6e3 100%);
+    width: 15%;
+    border-radius: 1%;
+
+}
+.btn-grad {
+    background-image: radial-gradient( circle farthest-corner at 50.7% 54%,  rgba(204,254,152,1) 0%, rgba(229,253,190,1) 92.4% );
+    margin: 10px;
+    padding: 15px ;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;            
+    box-shadow: 0 0 20px #eee;
+    border-radius: 10px;
+    display: block;
+  }
+
+  .btn-grad:hover {
+    background-position: right center;
+    color: #fff;
+    text-decoration: none;
+  }
+  body{
+    background: #DAD299;  
+    background: -webkit-linear-gradient(to right, #B0DAB9, #DAD299);  
+    background: linear-gradient(to right, #B0DAB9, #DAD299);
+    
+}
+
+.pagination {
+    background-image: linear-gradient(to right, #EDE574 0%, #E1F5C4 51%, #EDE574 100%);
+    margin: 10px;
+    padding: 15px 45px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    border-radius: 10px;
+    display: block;
+    border-radius: 45px;
+    color: black;
+}

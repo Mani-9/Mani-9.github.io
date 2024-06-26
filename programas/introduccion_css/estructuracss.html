@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="estiloscss/styles2.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul id="menu">
+                <li class="lmenu"><a class="active" href="index.html">PAGINA INICIO</a></li>
+                <li class="lmenu"><a href="estructuracss.html">PÁGINA ESTRUCTURA DE CSS</a></li>
+                <li class="lmenu"><a href="colores.html">PÁGINA COLORES</a></li>
+                <li class="lmenu"><a href="bordes.html">PÁGINA BORDES</a></li>
+                <li class="lmenu"><a href="sombreado.html">PÁGINA SOMBREADA</a></li>
+                <li class="lmenu"><a href="fondosyopacidad.html">PÁGINA FONDOS Y OPACIDAD</a></li>
+            </ul>
+        </nav><br>
+        <h1 Class="titulo">Estructura de CSS</h1><br>
+    </header>
+    <aside id="left">
+        <img src="https://yt3.ggpht.com/a-/AAuE7mCrZXhlKfXR3QvgDMBfXE7WFHUURfG1ctgv1w=s900-mo-c-c0xffffffff-rj-k-no"
+            alt="Logo">
+    </aside>
+    <section id="sec1">
+        <article id="art1">
+            <ol class="olgen">
+                <li class="orden">
+                    <h3 class="titulo3">Selector:</h3>
+                    <p class="textogen">Los selectores se utilizan para delimitar los elementos HTML de nuestra página
+                        web
+                        a los que
+                        queremos aplicar estilo.</p><br>
+                </li>
+                <li class="orden">
+                    <h3 class="titulo3">Propiedad:</h3>
+                    <p class="textogen">Son entidades definidas por autores de CSS que contienen valores específicos que
+                        se pueden volver a utilizar en un documento.</p><br>
+                </li>
+                <li class="orden">
+                    <h3 class="titulo3">Valor:</h3>
+                    <p class="textogen">Los selectores se utilizan para delimitar los elementos HTML de nuestra página
+                        web
+                        a los que
+                        queremos aplicar estilo.</p><br>
+                </li>
+            </ol>
+        </article>
+        <h2 class="titulo2">¿Qué es el modelo de cajas en CSS?</h2><br>
+        <article id="art2">
+            <p class="textogen">Es el comportamiento de CSS que hace que todos los elementos de las páginas se
+                representen mediante cajas rectangulares.</p><br>
+            <ol class="olgen">
+                <li class="orden">
+                    <p class="textogen">En el primer ejemplo el borde se dibuja por fuera del tamaño definido para el
+                        elemento:</p>
+                    <pre class="ejemplo">
+p {
+  width: 200px;
+  height: 100px;
+  box-sizing: content-box;
+  border: red 25px solid;
+}
+                    </pre><br>
+                </li>
+                <li class="orden">
+                    <p class="textogen">En el segundo, el borde se dibuja por dentro del tamaño definido para el
+                        elemento:</p>
+                    <pre class="ejemplo">
+p {
+  width: 200px;
+  height: 100px;
+  box-sizing: border-box;
+  border: red 25px solid;
+}
+                    </pre><br>
+                </li>
+                <li class="orden">
+                    <p class="textogen">En el tercero, se observa como el comportamiento predeterminado de los
+                        navegadores es el correspondiente a content-box:</p>
+                    <pre class="ejemplo">
+p {
+  width: 200px;
+  height: 100px;
+  border: red 25px solid;
+}
+                    </pre>
+                </li>
+            </ol><br>
+        </article>
+        <h2 class="titulo2">Elementos de línea y elementos de bloque</h2><br>
+        <article id="art3">
+            <ol class="olgen">
+                <li class="orden">
+                    <h3 class="titulo3">Elementos en linea:</h3>
+                    <p class="textogen"> son aquellos cuyo contenido se encuentra en una misma linea, de tal manera que que si colocamos dos o más elementos en linea sin expresar un salto de linea</p>
+                    <pre class="ejemplo">
+&lt;html&gt;
+    &lt;head&gt;
+        &lt;style&gt;
+            a {border: solid 2px orange}
+        &lt;/style&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+        &lt;a&gt;Este es un elemento Inline&lt;/a&gt;
+        &lt;a&gt;Este es otro elemento Inline&lt;/a&gt;
+        &lt;a&gt;Y éste también es Inline&lt;/a&gt;
+    &lt;/body&gt;
+&lt;/html&gt;
+                    </pre><br>
+                </li>
+                <li class="orden">
+                    <h3 class="titulo3">Elementos en bloque:</h3>
+                    <p class="textogen">Son aquellos que se comportan como bloques, cada vez que se presenta un elemento de este tipo se hace un salto de linea de manera predeterminada sin la necesidad de colocar una etiqueta de salto de linea.</p>
+                    <pre class="ejemplo">
+&lt;html&gt;
+    &lt;head&gt;
+        &lt;style&gt;
+            a {border: solid 2px orange}
+        &lt;/style&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+        &lt;p&gt;Este es un elemento Block&lt;/p&gt;
+        &lt;p&gt;Y éste es otro elemento Block&lt;/p&gt; 
+    &lt;/body&gt;
+&lt;/html&gt;
+                    </pre><br>
+                </li>
+            </ol>
+
+        </article>
+    </section>
+
+</body>
+
+</html>

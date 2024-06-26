@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="estiloscss/styles3.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul id="menu">
+                <li class="lmenu"><a class="active" href="index.html">PAGINA INICIO</a></li>
+                <li class="lmenu"><a href="estructuracss.html">PÁGINA ESTRUCTURA DE CSS</a></li>
+                <li class="lmenu"><a href="colores.html">PÁGINA COLORES</a></li>
+                <li class="lmenu"><a href="bordes.html">PÁGINA BORDES</a></li>
+                <li class="lmenu"><a href="sombreado.html">PÁGINA SOMBREADA</a></li>
+                <li class="lmenu"><a href="fondosyopacidad.html">PÁGINA FONDOS Y OPACIDAD</a></li>
+            </ul>
+        </nav><br>
+        <h1 Class="titulo">Colores</h1><br>
+    </header>
+    <aside id="left">
+        <img src="https://yt3.ggpht.com/a-/AAuE7mCrZXhlKfXR3QvgDMBfXE7WFHUURfG1ctgv1w=s900-mo-c-c0xffffffff-rj-k-no"
+            alt="Logo">
+    </aside>
+    <section id="sec1">
+        <article id="art1">
+            <ol class="olgen">
+                <h2 class="titulo2">Como se especifican los colores en CSS:</h2><br>
+                <li class="orden">
+                    <h3 class="titulo3">Usando una palabra clave:</h3><br>
+                    <p class="textogen">Es como una variable que contiene el valor actual de la propiedad de color de
+                        un elemento.
+                        Esta palabra clave puede ser útil si desea que un color específico sea consistente en un
+                        elemento o una página.</p><br>
+                    <pre class="ejemplo">
+div {
+  color: blue;
+  border: 10px solid currentcolor;
+}
+                       </pre>
+                </li><br>
+                <li class="orden">
+                    <h3 class="titulo3">Usando el sistema RGB cubic-coordinate:</h3><br>
+                    <p class="textogen">Consiste en definir un color indicando la cantidad de color rojo, verde y azul
+                        que se debe mezclar para obtener ese color. </p><br>
+                    <pre class="ejemplo">
+h2 {
+  background-color: rgb(150,100,255);
+}
+p {
+    background-color: rgb(150,100,255,.5);
+  }
+                       </pre>
+                </li><br>
+                <li class="orden">
+                    <h3 class="titulo3">Usando el sistema HSL cylindrical-coordinate:</h3><br>
+                    <p class="textogen">Se basa en la rueda de colores RGB. Cada color tiene un ángulo y un valor
+                        porcentual para los valores de saturación y luminosidad.</p><br>
+                    <pre class="ejemplo">
+.element {
+    background-color: hsl(196, 73%, 62%);
+}
+                       </pre>
+                </li>
+                <li class="orden">
+                    <h3 class="titulo3">Colores gradiantes:</h3><br>
+                    <p class="textogen">Se pueden usar en cualquier lugar donde usaría &lt;image&gt;, como en los
+                        fondos.
+                        Debido a que los degradados se generan dinámicamente, pueden anular la necesidad de los
+                        archivos de imagen de trama que tradicionalmente se usaban para lograr efectos similares.
+                    </p> <br>
+                    <h3 class="titulo3">Ejemplos tipos de gradiantes:</h3><br>
+                    <h3 class="titulo3">Gradiante lineal:</h3><br>
+                    <pre class="ejemplo">
+#grad {
+  background-image: linear-gradient(red, yellow);
+}
+                       </pre>
+                    <h3 class="titulo3">Gradiante radial:</h3><br>
+                    <pre class="ejemplo">
+#grad {
+  background-image: radial-gradient(red, yellow, green);
+}
+                       </pre>
+                    <h3 class="titulo3">Gradiante conica:</h3><br>
+                    <pre class="ejemplo">
+#grad {
+  background-image: conic-gradient(red, yellow, green);
+}
+                       </pre>
+                </li>
+            </ol>
+        </article>
+
+    </section>
+</body>
+
+</html>

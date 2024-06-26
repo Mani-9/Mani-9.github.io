@@ -1,0 +1,193 @@
+.container {
+    width: 1200px;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+}
+
+header {
+    height: 200px;
+    background-color: black;
+}
+#seccion_incial{
+    height:  250px;
+    display: flex;
+}
+#art1, #art2, #art3{
+    width: 1200px;
+}
+#art1, #art3{
+    background-color: yellow;
+}
+#art2{
+    background-color: blue;
+}
+#medio{
+    height: 150px;
+    display: flex;
+}
+#m1, #m2{
+    width: 600px;
+}
+#m1{
+    background-color: red;
+}
+#m2{
+background-color: green;
+}
+#medio2{
+    height: 300px;
+    display: flex;
+}
+#mm1{
+    background-color: orangered;
+    width: 900px;
+}
+#mm2{
+background-color: red;
+width: 300px;
+}
+#medio3 {
+    height: 200px;
+    background-color: black;
+}
+#fin{
+    height: 300px;
+    display: flex;
+}
+#fn1{
+    background-color: red;
+    width: 300px;
+}
+#fn2{
+background-color: orangered;
+width: 900px;
+}.container {
+    width: 1200px;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+}
+
+header {
+    height: 200px;
+    background-color: black;
+}
+#seccion_incial{
+    height:  250px;
+    display: flex;
+}
+#art1, #art2, #art3{
+    width: 1200px;
+}
+#art1, #art3{
+    background-color: yellow;
+}
+#art2{
+    background-color: blue;
+}
+#medio{
+    height: 150px;
+    display: flex;
+}
+#m1, #m2{
+    width: 600px;
+}
+#m1{
+    background-color: red;
+}
+#m2{
+background-color: green;
+}
+#medio2{
+    height: 300px;
+    display: flex;
+}
+#mm1{
+    background-color: orangered;
+    width: 900px;
+}
+#mm2{
+background-color: red;
+width: 300px;
+}
+#medio3 {
+    height: 200px;
+    background-color: black;
+}
+#fin{
+    height: 300px;
+    display: flex;
+}
+#fn1{
+    background-color: red;
+    width: 300px;
+}
+#fn2{
+background-color: orangered;
+width: 900px;
+}.container {
+    width: 1200px;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+}
+
+header {
+    height: 200px;
+    background-color: black;
+}
+#seccion_incial{
+    height:  250px;
+    display: flex;
+}
+#art1, #art2, #art3{
+    width: 1200px;
+}
+#art1, #art3{
+    background-color: yellow;
+}
+#art2{
+    background-color: blue;
+}
+#medio{
+    height: 150px;
+    display: flex;
+}
+#m1, #m2{
+    width: 600px;
+}
+#m1{
+    background-color: red;
+}
+#m2{
+background-color: green;
+}
+#medio2{
+    height: 300px;
+    display: flex;
+}
+#mm1{
+    background-color: orangered;
+    width: 900px;
+}
+#mm2{
+background-color: red;
+width: 300px;
+}
+#medio3 {
+    height: 200px;
+    background-color: black;
+}
+#fin{
+    height: 300px;
+    display: flex;
+}
+#fn1{
+    background-color: red;
+    width: 300px;
+}
+#fn2{
+background-color: orangered;
+width: 900px;
+}

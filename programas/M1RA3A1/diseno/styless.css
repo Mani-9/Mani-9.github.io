@@ -1,0 +1,49 @@
+body {
+    background-image: url(https://images.nightcafe.studio/jobs/5kb1sZFvcoj2IClriKdW/5kb1sZFvcoj2IClriKdW--2--17mnb_2x.jpg?tr=w-1600,c-at_max);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+}
+
+header {
+    background: #67B26F;  
+    background: -webkit-linear-gradient(to right, #4ca2cd, #67B26F); 
+    background: linear-gradient(to right, #4ca2cd, #67B26F);
+    border-radius: 20px;
+    color: white;
+    margin-top: 25px;
+}
+
+.custom-card {
+    background-color: #D9AFD9;
+    background-image: linear-gradient(0deg, #D9AFD9 0%, #97D9E1 100%);
+    
+
+}
+
+.custom-card2 {
+    background-color: #8EC5FC;
+    background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);
+
+}
+
+.btn-grad {
+    background-image: linear-gradient(to right, #EDE574 0%, #E1F5C4 51%, #EDE574 100%);
+    margin: 10px;
+    padding: 15px 45px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;
+    box-shadow: 0 0 20px #eee;
+    border-radius: 10px;
+    display: block;
+}
+
+.btn-grad:hover {
+    background-position: right center;
+
+    color: #fff;
+    text-decoration: none;
+}

@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="estiloscss/styles4.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul id="menu">
+                <li class="lmenu"><a class="active" href="index.html">PAGINA INICIO</a></li>
+                <li class="lmenu"><a href="estructuracss.html">PÁGINA ESTRUCTURA DE CSS</a></li>
+                <li class="lmenu"><a href="colores.html">PÁGINA COLORES</a></li>
+                <li class="lmenu"><a href="bordes.html">PÁGINA BORDES</a></li>
+                <li class="lmenu"><a href="sombreado.html">PÁGINA SOMBREADA</a></li>
+                <li class="lmenu"><a href="fondosyopacidad.html">PÁGINA FONDOS Y OPACIDAD</a></li>
+            </ul>
+        </nav><br>
+        <h1 Class="titulo">Bordes</h1><br>
+    </header>
+    <aside id="left">
+        <img src="https://yt3.ggpht.com/a-/AAuE7mCrZXhlKfXR3QvgDMBfXE7WFHUURfG1ctgv1w=s900-mo-c-c0xffffffff-rj-k-no"
+            alt="Logo">
+    </aside>
+    <section id="sec1">
+        <article id="art1">
+            <ol class="olgen">
+                <li class="orden">
+            <h3 class="titulo3">Que es un borde?</h3>
+            <p class="textogen">Es una propiedad que te permite definir los bordes alrededor de los elementos
+                HTML.</p><br>
+            <pre class="ejemplo">
+.mi-elemento {
+border: 1px solid #000;
+/* Un borde sólido de 1 píxel de ancho y color negro */
+}    
+         </pre><br>
+         </li>
+         </ol>
+        </article>
+        <h2 class="titulo2">Tipos de bordes</h2><br>
+        <article id="art2">
+            <ol class="olgen">
+                <li class="orden">
+                    <h3 class="titulo3">dotted:</h3>
+                    <p class="textogen">Define un borde punteado</p><br>
+                    <pre class="ejemplo">
+p.dotted {border-style: dotted;
+}
+                    </pre><br>
+                </li>
+                <li class="orden">
+                    <h3 class="titulo3">dashed:</h3>
+                    <p class="textogen">Define un borde discontinuo</p><br>
+                    <pre class="ejemplo">
+p.dashed {border-style: dashed;
+}
+                    </pre><br>
+                </li>
+                <li class="orden">
+                    <h3 class="titulo3">solid:</h3>
+                    <p class="textogen">Define un borde sólido</p><br>
+                    <pre class="ejemplo">
+p.solid {border-style: solid;
+}
+                    </pre><br>
+                </li>
+                <li class="orden">
+                    <h3 class="titulo3">double</h3>
+                    <p class="textogen">Define un doble borde</p><br>
+                    <pre class="ejemplo">
+p.double {border-style: double;
+}
+                    </pre><br>
+                </li>
+                <li class="orden">
+                    <h3 class="titulo3">groove:</h3>
+                    <p class="textogen"> Define un borde ranurado 3D. El efecto depende del valor del color del borde
+                    </p><br>
+                    <pre class="ejemplo">
+p.double {border-style: groove;
+}
+                    </pre><br>
+                </li>
+                <li class="orden">
+                    <h3 class="titulo3">ridge:</h3>
+                    <p class="textogen">Define un borde estriado 3D. El efecto depende del valor del color del borde</p>
+                    <br>
+                    <pre class="ejemplo">
+p.double {border-style: ridge;
+}
+                    </pre><br>
+                </li>
+                <li class="orden">
+                    <h3 class="titulo3">inset:</h3>
+                    <p class="textogen">Define un borde de inserción 3D. El efecto depende del valor del color del borde
+                    </p><br>
+                    <pre class="ejemplo">
+p.double {border-style: inset;
+}
+                    </pre><br>
+                </li>
+                <li class="orden">
+                    <h3 class="titulo3">outset:</h3>
+                    <p class="textogen">Define un borde de inicio 3D. El efecto depende del valor del color del borde
+                    </p><br>
+                    <pre class="ejemplo">
+p.double {border-style: outset;
+}
+                    </pre><br>
+                </li>
+                <li class="orden">
+                    <h3 class="titulo3">none:</h3>
+                    <p class="textogen">No define ningún borde</p><br>
+                    <pre class="ejemplo">
+p.double {border-style: none;
+}
+                    </pre><br>
+                </li>
+                <li class="orden">
+                    <h3 class="titulo3">hidden:</h3>
+                    <p class="textogen"> Define un borde oculto</p><br>
+                    <pre class="ejemplo">
+p.double {border-style: hidden;
+}
+                    </pre><br>
+                </li>
+            </ol>
+        </article>
+        <h2 class="titulo2">Colores CSS</h2><br>
+        <article id="art3">
+            <ol class="olgen">
+                <li class="orden">
+                    <h3 class="titulo3">Nombre:</h3>
+                    <p class="textogen">La propiedad puede tener de uno a cuatro valores (para el borde superior, el
+                        borde derecho, el borde inferior y el borde izquierdo).</p><br>
+                    <pre class="ejemplo">
+p.one {
+  border-style: solid;
+  border-color: red green blue yellow;
+  /* red top, green right, blue bottom and yellow left */
+}
+                    </pre><br>
+                </li>
+                <li class="orden">
+                    <h3 class="titulo3">HEX:</h3>
+                    <p class="textogen">El color del borde también se puede especificar mediante un valor hexadecimal
+                        (HEX):</p><br>
+                    <pre class="ejemplo">
+p.one {
+  border-style: solid;
+  border-color: #ff0000; /* red */
+}
+                    </pre><br>
+                </li>
+                <li class="orden">
+                    <h3 class="titulo3">RGB:</h3>
+                    <p class="textogen">Uso de valores RGB
+                    <p><br>
+                    <pre class="ejemplo">
+p.one {
+  border-style: solid;
+  border-color: rgb(255, 0, 0); /* red */
+}
+                    </pre><br>
+                </li>
+                <li class="orden">
+                    <h3 class="titulo3">HSL</h3>
+                    <p class="textogen">Uso de valores HSL</p><br>
+                    <pre class="ejemplo">
+p.one {
+  border-style: solid;
+  border-color: hsl(0, 100%, 50%); /* red */
+}                    </pre><br>
+                </li>
+            </ol>
+        </article>
+        <h2 class="titulo2">Ancho de borde</h2><br>
+        <article id="art4">
+            <p class="textogen">Esta propiedad permite establecer el grosor de los cuatro bordes de un elemento. Puede
+                tener de uno a cuatro valores. </p><br>
+            <pre class="ejemplo">
+element {
+    border-width: thin;
+    border-style: solid;
+    border-color: #000;
+}
+                   </pre><br>
+        </article>
+        <h2 class="titulo2">Bordes
+            redondeados.</h2><br>
+        <article id="art5">
+            <ol class="olgen">
+                <li class="orden">
+                    <h3 class="titulo3">Cuatro valores :</h3>
+                    <p class="textogen">border-radius: 15px 50px 30px 5px; Primero el valor se aplica a la esquina
+                        superior izquierda, el segundo valor se aplica a la esquina superior derecha, El tercer valor se
+                        aplica a la esquina inferior derecha y el cuarto valor se aplica a esquina inferior izquierda:
+                    </p><br>
+                    <pre class="ejemplo">
+#rcorners1 {
+  border-radius: 15px 50px 30px 5px;
+  background: #73AD21;
+  padding: 20px;
+  width: 200px;
+  height: 150px;
+}
+                    </pre><br>
+                </li>
+                <li class="orden">
+                    <h3 class="titulo3">Tres valores:</h3>
+                    <p class="textogen">border-radius: 15px 50px 30px; Primer valor se aplica a la esquina superior
+                        izquierda, el segundo valor se aplica a la esquina superior derecha y a la parte inferior
+                        izquierda esquinas, y el tercer valor se aplica a la esquina inferior derecha:</p><br>
+                    <pre class="ejemplo">
+#rcorners2 {
+  border-radius: 15px 50px 30px;
+  background: #73AD21;
+  padding: 20px;
+  width: 200px;
+  height: 150px;
+}
+                    </pre><br>
+                </li>
+                <li class="orden">
+                    <h3 class="titulo3">Dos valores :</h3>
+                    <p class="textogen">border-radius: 15px 50px; Se aplica el primer valor a las esquinas superior
+                        izquierda e inferior derecha, y el segundo valor se aplica a la esquina superior derecha y
+                        esquinas inferiores izquierdas:</p><br>
+                    <pre class="ejemplo">
+#rcorners3 {
+  border-radius: 15px 50px;
+  background: #73AD21;
+  padding: 20px;
+  width: 200px;
+  height: 150px;
+}
+
+                    </pre><br>
+                </li>
+                <li class="orden">
+                    <h3 class="titulo3">Un valor</h3>
+                    <p class="textogen">border-radius: 15px; El valor se aplica a todos los cuatro esquinas, que se
+                        redondean igualmente:</p><br>
+                    <pre class="ejemplo">
+#rcorners4 {
+  border-radius: 15px;
+  background: #73AD21;
+  padding: 20px;
+  width: 200px;
+  height: 150px;
+}                  </pre><br>
+                </li>
+            </ol>
+        </article>
+    </section>
+</body>
+
+</html>
