@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV Manuel Reyes</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+    <style>
+        *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+        :root {
+            --navy:     #1B2A4A;
+            --teal:     #0D9E8A;
+            --teal-lt:  #E4F7F5;
+            --amber:    #E8A020;
+            --amber-lt: #FDF3E0;
+            --text-primary: #1B2A4A;
+            --text-body:    #3D4F6B;
+            --text-muted:   #7A8FA8;
+            --bg-page:      #F2F4F7;
+            --bg-white:     #FFFFFF;
+            --border:       #DDE3EC;
+        }
+
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background: var(--bg-page);
+            color: var(--text-primary);
+            min-height: 100vh;
+        }
+
+        header {
+            background: var(--navy);
+            padding: 52px 40px 44px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        header::after {
+            content: '';
+            position: absolute;
+            bottom: 0; left: 0;
+            width: 100%; height: 4px;
+            background: linear-gradient(90deg, var(--teal) 0%, var(--amber) 100%);
+        }
+
+        header::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background-image:
+                radial-gradient(circle at 85% 30%, rgba(13,158,138,.18) 0%, transparent 55%),
+                radial-gradient(circle at 10% 80%, rgba(232,160,32,.10) 0%, transparent 45%);
+            pointer-events: none;
+        }
+
+        .header-inner {
+            max-width: 900px;
+            margin: 0 auto;
+            position: relative;
+            display: flex;
+            align-items: flex-end;
+            gap: 36px;
+        }
+
+        .avatar {
+            width: 72px; height: 72px;
+            border-radius: 50%;
+            background: var(--teal);
+            display: flex; align-items: center; justify-content: center;
+            font-family: 'Lora', serif;
+            font-size: 28px;
+            color: #fff;
+            flex-shrink: 0;
+            border: 3px solid rgba(255,255,255,.15);
+            letter-spacing: -1px;
+        }
+
+        .header-eyebrow {
+            font-size: 10.5px;
+            font-weight: 600;
+            letter-spacing: .22em;
+            text-transform: uppercase;
+            color: var(--teal);
+            margin-bottom: 10px;
+        }
+
+        header h1 {
+            font-family: 'Lora', serif;
+            font-size: clamp(30px, 5vw, 50px);
+            font-weight: 600;
+            line-height: 1.05;
+            color: #fff;
+            margin-bottom: 14px;
+        }
+
+        header h1 em {
+            font-style: italic;
+            font-weight: 400;
+            color: rgba(255,255,255,.60);
+        }
+
+        .header-contact {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: rgba(255,255,255,.08);
+            border: 1px solid rgba(255,255,255,.12);
+            border-radius: 100px;
+            padding: 7px 16px;
+            font-size: 13px;
+            color: rgba(255,255,255,.75);
+        }
+
+        .contact-dot {
+            width: 6px; height: 6px;
+            border-radius: 50%;
+            background: var(--amber);
+            flex-shrink: 0;
+        }
+
+        main {
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 0 24px;
+            display: grid;
+            grid-template-columns: 1fr 260px;
+            gap: 32px;
+            align-items: start;
+        }
+
+        .card {
+            background: var(--bg-white);
+            border: 1px solid var(--border);
+            border-radius: 16px;
+            padding: 28px 28px 24px;
+            margin-bottom: 20px;
+        }
+
+        .section-label {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-size: 10px;
+            font-weight: 600;
+            letter-spacing: .22em;
+            text-transform: uppercase;
+            color: var(--teal);
+            margin-bottom: 18px;
+        }
+
+        .section-label::before {
+            content: '';
+            display: block;
+            width: 20px; height: 2px;
+            background: var(--teal);
+            border-radius: 2px;
+            flex-shrink: 0;
+        }
+
+        .card p.body-text {
+            font-size: 15px;
+            line-height: 1.8;
+            color: var(--text-body);
+            font-weight: 300;
+        }
+
+        .exp-list {
+            list-style: none;
+        }
+
+        .exp-list li {
+            display: flex;
+            gap: 16px;
+            align-items: flex-start;
+            font-size: 14.5px;
+            line-height: 1.65;
+            color: var(--text-body);
+            font-weight: 300;
+            padding: 12px 0;
+            border-bottom: 1px solid var(--border);
+        }
+
+        .exp-list li:last-child { border-bottom: none; padding-bottom: 0; }
+        .exp-list li:first-child { padding-top: 0; }
+
+        .exp-list li::before {
+            content: '';
+            width: 7px; height: 7px;
+            border-radius: 50%;
+            background: var(--amber);
+            flex-shrink: 0;
+            margin-top: 7px;
+        }
+
+        .sidebar .card { margin-bottom: 16px; }
+
+        .skill-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+
+        .tag {
+            font-size: 12.5px;
+            font-weight: 500;
+            padding: 6px 14px;
+            border-radius: 100px;
+            background: var(--teal-lt);
+            color: #0A7A6A;
+            border: 1.5px solid rgba(13,158,138,.2);
+            transition: background .2s, border-color .2s, transform .15s;
+            cursor: default;
+        }
+
+        .tag:hover {
+            background: var(--teal);
+            color: #fff;
+            border-color: var(--teal);
+            transform: translateY(-1px);
+        }
+
+        .tag.primary {
+            background: var(--amber-lt);
+            color: #9A6A10;
+            border-color: rgba(232,160,32,.3);
+        }
+
+        .tag.primary:hover {
+            background: var(--amber);
+            color: #fff;
+            border-color: var(--amber);
+        }
+
+        .edu-item {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            font-size: 14.5px;
+            color: var(--text-body);
+            font-weight: 400;
+        }
+
+        .edu-icon {
+            width: 34px; height: 34px;
+            border-radius: 9px;
+            background: var(--teal-lt);
+            display: flex; align-items: center; justify-content: center;
+            flex-shrink: 0;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            font-size: 12px;
+            color: var(--text-muted);
+            border-top: 1px solid var(--border);
+            background: var(--bg-white);
+        }
+
+        @media (max-width: 680px) {
+            main { grid-template-columns: 1fr; gap: 0; }
+            header { padding: 40px 24px 36px; }
+            .header-inner { flex-direction: column; align-items: flex-start; gap: 20px; }
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <div class="header-inner">
+        <div class="avatar">MR</div>
+        <div>
+            <p class="header-eyebrow">Currículum Vitae</p>
+            <h1>Manuel <em>Reyes</em></h1>
+            <div class="header-contact">
+                <span class="contact-dot"></span>
+                manuel@email.com
+            </div>
+        </div>
+    </div>
+</header>
+
+<main>
+
+    <div>
+        <div class="card">
+            <p class="section-label">Perfil</p>
+            <p class="body-text">Programador junior enfocado en desarrollo web con Laravel, Vue y bases de datos. Interesado en crear aplicaciones escalables y bien estructuradas.</p>
+        </div>
+
+        <div class="card">
+            <p class="section-label">Experiencia</p>
+            <ul class="exp-list">
+                <li>Desarrollo de sistema de inventario en Laravel</li>
+                <li>Creación de CRUDs dinámicos con Blade y JavaScript</li>
+                <li>Integración de APIs y manejo de bases de datos MySQL</li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <p class="section-label">Educación</p>
+            <div class="edu-item">
+                <div class="edu-icon">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#0D9E8A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3.33 1.67 8.67 1.67 12 0v-5"/>
+                    </svg>
+                </div>
+                Técnico en Desarrollo de Software
+            </div>
+        </div>
+    </div>
+
+    <aside class="sidebar">
+        <div class="card">
+            <p class="section-label">Habilidades</p>
+            <div class="skill-grid">
+                <span class="tag primary">PHP</span>
+                <span class="tag primary">Laravel</span>
+                <span class="tag">JavaScript</span>
+                <span class="tag">Vue</span>
+                <span class="tag">MySQL</span>
+                <span class="tag">HTML</span>
+                <span class="tag">CSS</span>
+            </div>
+        </div>
+    </aside>
+
+</main>
+
+<footer>
+    <p>© 2024 Manuel Reyes. Todos los derechos reservados.</p>
+</footer>
+
+</body>
+</html>
